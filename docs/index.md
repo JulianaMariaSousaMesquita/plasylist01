@@ -1,4 +1,40 @@
 ## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery.min.js"></script>
+    </head>
+    <body>
+<audio src="" controls id="audioPlayer">
+        Sorry, your browser doesn't support html5!
+    </audio>
+    <ul id="playlist">
+           <li class="active"><a href="/musicas/palcoiluminado_Meninafaceira.mp3">01. Menina Faceira</a></li>
+           <li><a href="/musicas/palcoiluminado_Rainhadacocada.mp3" >02. Rainha da Cocada</a></li>
+           <li><a href="/musicas/palcoiluminado_Amordecarnaval.mp3">03. Amor de Carnaval</a></li>
+           <li><a href="/musicas/palcoiluminado_Alemdailusao.mp3">04. Além da Ilusão</a></li>
+           <li><a href="/musicas/palcoiluminado_Tribunaldoamor.mp3">05. Tibunal do Amor</a></li>
+           <li><a href="/musicas/palcoiluminado_Feranocio.mp3">06. Fera no Cio</a></li>
+           <li><a href="/musicas/palcoiluminado_Peleesuor.mp3">07. Pele e suor</a></li>
+           <li><a href="/musicas/palcoiluminado_Quemama.mp3">08. Quem amar</a></li>
+           <li><a href="/musicas/palcoiluminado_Maisumgrandeamor.mp3">09. Mais um grande amor</a></li>
+           <li><a href="/musicas/palcoiluminado_Fiodanavalha.mp3">10. Fio da navalhar</a></li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="audioPlayer.js"></script>
+    <script>
+        // loads the audio player
+        audioPlayer();
+    </script>
+    </body>
+</html>
 
 You can use the [editor on GitHub](https://github.com/JulianaMariaSousaMesquita/plasylist01/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
