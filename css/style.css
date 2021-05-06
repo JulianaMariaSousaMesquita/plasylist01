@@ -1,0 +1,27 @@
+ul   {
+    list-style: none;
+    padding: 0%;    
+}
+
+a  {
+    text-decoration: none;
+    color: #444;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+li:hover  {
+    background: #eee;
+    border-bottom: solid 1px #f60;
+}
+
+li  {
+    width: 20%;
+    padding: 5px;
+    border-bottom: solid 1px #ccc;
+} 
+
+.active a   {
+    color: #f60;
+    padding-left: 1px;
+    font-style: italic;
+}
