@@ -10,23 +10,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-
-# Playlist
+# Playlist index.html
 <!DOCTYPE html>
 <html>
     <head>
@@ -63,6 +47,67 @@ Syntax highlighted code block
     </script>
     </body>
 </html>
+
+
+# Playlist javascript.js
+        function audioPlayer(){
+            var currentSong = 0;
+            $("#audioPlayer")[0].src = $("#playlist li a")[0];            
+            $("#audioPlayer")[0].play();          
+            $("#playlist li a").click(function(e){
+               e.preventDefault();                
+               $("#audioPlayer")[0].src = this;           
+               $("#audioPlayer")[0].play();
+               $("#playlist li").removeClass("current-song active");             
+                currentSong = $(this).parent().index();
+                $(this).parent().addClass("current-song active");                
+            });
+            
+            $("#audioPlayer")[0].addEventListener("ended", function(){
+                currentSong++;
+                if(currentSong == $("#playlist li a").length)
+                    currentSong = 0;
+                $("#playlist li").removeClass("current-song active");
+                $("#playlist li:eq("+currentSong+")").addClass("current-song active");
+                $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
+                $("#audioPlayer")[0].play();
+            });
+        }
+
+
+# Playlist style.css
+
+.playlist {
+    align-items: center;
+    font-family: "Century Gothic";
+} 
+
+ul   {
+    list-style: none;
+    padding: 0%;    
+}
+
+a  {
+    text-decoration: none;
+    color: #444;
+}
+
+li:hover  {
+    background: #eee;
+    border-bottom: solid 1px #f60;
+}
+
+li  {
+    width: 20%;
+    padding: 5px;
+    border-bottom: solid 1px #ccc;
+} 
+
+.active a   {
+    color: #f60;
+    padding-left: 1px;
+    font-style: italic;
+}
 
 ```
 
