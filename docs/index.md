@@ -3,9 +3,7 @@
 
 You can use the [editor on GitHub](https://github.com/JulianaMariaSousaMesquita/plasylist01/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Code Playlist
 
 ```markdown
 # Playlist index.html
